@@ -23,9 +23,10 @@ LANGUAGE=`echo "$LANGUAGE" | tr [:upper:] [:lower:]`
 COUNTER=1
 MAX_RETRY=5
 
-CC_SRC_PATH="github.com/chaincode/chaincode_example02/go/"
+CC_SRC_PATH="github.com/chaincode/marbles02_private/go/"
+CC_SRC_PATH_CONF="/opt/gopath/src/github.com/chaincode/marbles02_private/collections_config.json"
 if [ "$LANGUAGE" = "node" ]; then
-	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_example02/node/"
+	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/marbles02_private/node/"
 fi
 
 echo "Channel name : "$CHANNEL_NAME
